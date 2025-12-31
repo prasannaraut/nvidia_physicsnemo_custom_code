@@ -15,7 +15,7 @@ Once Docker and wsl are installed, it can be started with below commands
       4) Start docker with 'sudo docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864  -p 8888:8888 -p 8889:8889 -it --rm openhackathons:ai-for-science'
       5) Open the jupyter notebook
       6) Copy the code that you want to run, you can also create subdirectories
-      7) open terminal and run the file by command python 'filename'
+      7) open terminal and run the file by command python 'filename'. Note if config.yaml is used it must be placed in folder conf
       8) note, any changes are not automatically saved and will be lost once the jupyter notebook is closed
 
 Few examples can be found at 
