@@ -1,0 +1,23 @@
+Installing physicsnemo specially physicsnemo.sym is very complicated for the the windows
+Best is to use the docker container
+  To install docer links are
+  Generice webpage: https://github.com/openhackathons-org/End-to-End-AI-for-Science/blob/main/Deployment_Guide.MD
+  Docker installation: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+
+
+Along with docker you will also need wsl on windows laptop, install it. Its a linux environment in windows mahchine
+
+Once Docker and wsl are installed, it can be started with below commands
+    To start the Jupyter Lab Session
+      1) Open CMD in admin mode
+      2) Go to linux with type 'wsl'
+      3) cd to 'C:\Users\Prasanna\Documents\python_projects\NVDIA_PhysicsNeMo_end_to_end_ai_for_science'
+      4) Start docker with 'sudo docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864  -p 8888:8888 -p 8889:8889 -it --rm openhackathons:ai-for-science'
+      5) Open the jupyter notebook
+      6) Copy the code that you want to run, you can also create subdirectories
+      7) open terminal and run the file by command python 'filename'
+      8) note, any changes are not automatically saved and will be lost once the jupyter notebook is closed
+
+Few examples can be found at 
+  https://github.com/NVIDIA/physicsnemo-sym/tree/main/examples
+  
