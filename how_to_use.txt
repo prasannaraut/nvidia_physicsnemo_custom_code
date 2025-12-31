@@ -18,6 +18,7 @@ Once Docker and wsl are installed, it can be started with below commands
       7) open terminal and cd to appropriate directory, start with cd python
       8) run the file by command python 'filename'. Note if config.yaml is used it must be placed in folder conf
       9) note, any changes are not automatically saved and will be lost once the jupyter notebook is closed
+      10) the output files like .vtk, .vtp, or .npz., can be visualized in paraview
 
 Few examples can be found at 
   https://github.com/NVIDIA/physicsnemo-sym/tree/main/examples
